@@ -251,7 +251,7 @@ class GenFitImage(GenXXX):
     @show_task_info("Fetch files")
     def do_fetch(self):
         for key, dst in {'boot-scr': 'boot.scr',
-                         'boot-atf': 'atf-%s.s32' % self.data['machine'],
+                         'boot-atf': 'atf-%s.s32' % 'aptiv_cvc_fl' if self.data['machine'] == 'aptiv-cvc-131' else self.data['machine'],
                          'fit-config': '%s-%s.its' % (self.data['name'], self.data['machine']),
                          'lx-rootfs-script': '%s-lxrootfs.sh' % (self.data['name']),
                          'fit-kernel-post-script': '%s-fitkernel-postscript.sh' % (self.data['name']),

@@ -15,9 +15,9 @@ python __anonymous() {
     if 'ostree-layer' in (d.getVar('BBFILE_COLLECTIONS') or "").split():
         bb.fatal("The wr-ostree layer is obsolete, please use meta-lat layer to replace")
 }
-TOOLCHAIN_HOST_TASK:append:aptiv-cvc-fl = " \
-    meta-environment-aptiv-cvc-fl \
+TOOLCHAIN_HOST_TASK:append:aptiv-cvc-131 = " \
+    meta-environment-aptiv-cvc-131 \
 "
-TOOLCHAIN_HOST_TASK:remove:aptiv-cvc-fl = " \
-    packagegroup-cross-canadian-aptiv-cvc-fl \
+TOOLCHAIN_HOST_TASK:remove:aptiv-cvc-131 = " \
+    packagegroup-cross-canadian-aptiv-cvc-131 \
 "

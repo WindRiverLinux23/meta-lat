@@ -139,7 +139,7 @@ DEFAULT_PACKAGES_marvell_cn96xx = '''
     u-boot-uenv
 '''.split()
 
-DEFAULT_PACKAGES_aptiv_cvc_fl = '''
+DEFAULT_PACKAGES_aptiv_cvc_131 = '''
     u-boot-uenv
     kernel-devicetree
     kernel-image-image
@@ -245,7 +245,7 @@ DEFAULT_PACKAGES = {
     'marvell-cn96xx': DEFAULT_PACKAGES_marvell_cn96xx + DEFAULT_PACKAGES_COMMON,
     'nxp-s32g': DEFAULT_PACKAGES_nxp_s32g + DEFAULT_PACKAGES_COMMON,
     'aptiv_cvc_sousa': DEFAULT_PACKAGES_aptiv_cvc_sousa + DEFAULT_PACKAGES_COMMON,
-    'aptiv-cvc-fl': DEFAULT_PACKAGES_aptiv_cvc_fl + DEFAULT_PACKAGES_COMMON,
+    'aptiv-cvc-131': DEFAULT_PACKAGES_aptiv_cvc_131 + DEFAULT_PACKAGES_COMMON,
     'intel-socfpga-64': DEFAULT_PACKAGES_intel_socfpga_64 + DEFAULT_PACKAGES_COMMON,
     'ti-j72xx': DEFAULT_PACKAGES_ti_j72xx + DEFAULT_PACKAGES_COMMON,
     'nxp-ls1028': DEFAULT_PACKAGES_nxp_ls1028 + DEFAULT_PACKAGES_COMMON,
@@ -301,7 +301,7 @@ OSTREE_INITRD_PACKAGES = {
     'marvell-cn96xx': OSTREE_INITRD_PACKAGES_COMMON,
     'nxp-s32g': OSTREE_INITRD_PACKAGES_COMMON,
     'aptiv_cvc_sousa': OSTREE_INITRD_PACKAGES_COMMON,
-    'aptiv-cvc-fl': OSTREE_INITRD_PACKAGES_COMMON,
+    'aptiv-cvc-131': OSTREE_INITRD_PACKAGES_COMMON,
     'intel-socfpga-64': OSTREE_INITRD_PACKAGES_COMMON,
     'ti-j72xx': OSTREE_INITRD_PACKAGES_COMMON,
     'nxp-ls1028': OSTREE_INITRD_PACKAGES_COMMON,
